@@ -108,6 +108,7 @@
             radioButton1.TabStop = true;
             radioButton1.Text = "Купівля";
             radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.CheckedChanged += radioButton1_CheckedChanged_1;
             // 
             // radioButton2
             // 
@@ -143,7 +144,7 @@
             // textBox4
             // 
             textBox4.Enabled = false;
-            textBox4.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            textBox4.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
             textBox4.Location = new Point(545, 265);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(100, 21);
@@ -213,6 +214,7 @@
             Controls.Add(textBox1);
             Name = "Form1";
             Text = "Convertor";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
